@@ -46,34 +46,24 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+## Step 3: Update the app
 
-Now that you have successfully run the app, let's modify it.
+![DALL·E_2024-10-22_13_50_43_-_A_React_Native_app_mockup_showing_two_screens__The_Home_screen_has_a_welcome_message_and_navigation_bar_at_the_bottom_with_two_tabs__Home_and_Profile](https://github.com/user-attachments/assets/278aee96-9d7f-43c5-88c2-598d1af795cf)
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Create a Profile Screen:
+Develop a new Profile screen that will display the user's basic information: avatar, name, and email.
+Ensure the screen is added to the application’s navigation flow.
+## Set Up Navigation:
+Implement React Navigation to facilitate navigation between the existing Home screen and the new Profile screen.
+If not already configured, install and set up react-navigation, ensuring the app can handle screen transitions.
+Add a Bottom Tab Navigator with two tabs: Home and Profile, to allow switching between the screens.
+## Integrate API for Fetching User Data:
+On the Profile screen, fetch user data from the API endpoint:
+https://jsonplaceholder.typicode.com/users/1
+Automatically fetch the data when the Profile screen is mounted and display the user’s avatar, name, and email without requiring manual intervention from the user.
+## Manage State and Lifecycle:
+Use React’s useState and useEffect hooks to manage the state of the fetched data.
+Ensure that the data is fetched when the Profile screen loads (using useEffect) and displayed on the screen as soon as the data is available.
+## Enhance the UI:
+Style the Profile screen to neatly display the user information (name, email, and avatar) using React Native components like Text, Image, and View.
+Make sure the layout is clean and responsive across different screen sizes.
