@@ -67,3 +67,15 @@ Ensure that the data is fetched when the Profile screen loads (using useEffect) 
 ## Enhance the UI:
 Style the Profile screen to neatly display the user information (name, email, and avatar) using React Native components like Text, Image, and View.
 Make sure the layout is clean and responsive across different screen sizes.
+## Integrate app with Firebase Cloud Firestore
+Using Cloud Firestore is free when you sign up with Firebase - use an existing login or create a new login and integrate the app with Firebase Cloud Firestore (not the Firebase Realtime Database)
+## Design your own User Profile form in the app
+This is where you can be creative. Give the user the ability to update their profile information within the app.
+Design a button and place it wherever you think it makes sense so that when a user clicks on it a form appears where they can see their current profile information and they can update it.
+As part of this step you will need to do several things:
+1. Create a Firestore schema to hold the user profile information (requires Firebase Cloud Firestore integration above)
+2. Design a button for editing the profile
+3. Adding a new screen for updating profile information - can be a pop-up, a separate screen, or uses the current screen and makes the input fields editable - this is up to you.
+4. Allow users to input data into input fields
+5. Save data to Firebase Cloud Firestore
+
